@@ -6,6 +6,7 @@ import CalenderSvg from "./common/calender-svg";
 const ExperieneBlock = ({ data }) => {
   return (
     <React.Fragment>
+    <div className="mb-4 p-4 shadow-sm rounded">
       <div className="row mb-2">
         <div className="col">
           <h3 className="display-6 text-dark mb-1">{data.position}</h3>
@@ -23,11 +24,13 @@ const ExperieneBlock = ({ data }) => {
           </span>
         </div>
       </div>
-      <div className="row mb-5">
+      <div className="row">
         <div className="col">
           <p className="fs-6 text-muted">{data.about}</p>
         </div>
       </div>
+      </div>
+      
     </React.Fragment>
   );
 };

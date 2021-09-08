@@ -31,7 +31,7 @@ function getItem1(data) {
 
 function getItem2(data) {
   return (
-    <div className="row mb-5">
+    <div className="row mb-4 p-4 shadow-sm rounded">
       <div className="col">
         <h3 className="mb-1"> {data.course} </h3>
         <div className="fs-5 text-muted">
