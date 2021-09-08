@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/resume/static/css/main.e3d4b7a9.chunk.css",
+    "main.js": "/resume/static/js/main.5c3a155e.chunk.js",
+    "main.js.map": "/resume/static/js/main.5c3a155e.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.b6d2fe0a.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.b6d2fe0a.js.map",
+    "static/css/2.139d2174.chunk.css": "/resume/static/css/2.139d2174.chunk.css",
+    "static/js/2.11a0f36e.chunk.js": "/resume/static/js/2.11a0f36e.chunk.js",
+    "static/js/2.11a0f36e.chunk.js.map": "/resume/static/js/2.11a0f36e.chunk.js.map",
+    "static/js/3.49ad6f59.chunk.js": "/resume/static/js/3.49ad6f59.chunk.js",
+    "static/js/3.49ad6f59.chunk.js.map": "/resume/static/js/3.49ad6f59.chunk.js.map",
+    "index.html": "/resume/index.html",
+    "static/css/2.139d2174.chunk.css.map": "/resume/static/css/2.139d2174.chunk.css.map",
+    "static/css/main.e3d4b7a9.chunk.css.map": "/resume/static/css/main.e3d4b7a9.chunk.css.map",
+    "static/js/2.11a0f36e.chunk.js.LICENSE.txt": "/resume/static/js/2.11a0f36e.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/resume/static/media/bootstrap-icons.dfd0ea12.woff2",
+    "static/media/linked-in-copy.3de2fd22.jpg": "/resume/static/media/linked-in-copy.3de2fd22.jpg",
+    "static/media/logo-wipro.bc5cfd2e.svg": "/resume/static/media/logo-wipro.bc5cfd2e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b6d2fe0a.js",
+    "static/css/2.139d2174.chunk.css",
+    "static/js/2.11a0f36e.chunk.js",
+    "static/css/main.e3d4b7a9.chunk.css",
+    "static/js/main.5c3a155e.chunk.js"
+  ]
+}
