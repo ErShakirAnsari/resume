@@ -1,6 +1,6 @@
 // import calendar from "../images/calendar.svg";
 import React from "react";
-import CalenderSvg from "../common/calender-svg";
+import CalenderSvg from "./common/calender-svg";
 // import logoWipro from "../images/logo-wipro.svg";
 
 const ExperieneBlock = ({ data }) => {

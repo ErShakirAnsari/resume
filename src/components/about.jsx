@@ -15,7 +15,7 @@ const About = () => {
           <h1 className="display-1 text-dark">Shakir A. Ansari </h1>
           <hr className="mt-2 mb-4" />
           <p className="fs-5 text-muted">
-            I’m a software engineer in Rajasthan India with a passion for both
+            I’m a software engineer based in Rajasthan India with a passion for both
             frontend and backend.
             <br />I have total of 5+years experience in various
             <a href="#skills" style={{ textDecoration: "none" }}>

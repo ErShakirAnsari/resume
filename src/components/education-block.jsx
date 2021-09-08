@@ -1,4 +1,4 @@
-import CalenderSvg from "../common/calender-svg";
+import CalenderSvg from "./common/calender-svg";
 
 const EducationBlock = ({ data }) => {
   return getItem2(data);
@@ -33,7 +33,10 @@ function getItem2(data) {
   return (
     <div className="row mb-5">
       <div className="col">
-        <h3 className="mb-1">{data.board}</h3>
+        <h3 className="mb-1"> {data.course} </h3>
+        <div className="fs-5 text-muted">
+          &mdash; {data.board}
+        </div>
         <div className="fs-5 text-muted">
           &mdash; {data.school}, {data.location}
           {/* <br />
