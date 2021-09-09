@@ -1,3 +1,4 @@
+import Header from "./common/header";
 const About = () => {
   return (
     <section className="resume-section p-3 p-lg-5 d-flex d-column" id="about">
@@ -12,11 +13,11 @@ const About = () => {
           </a>
         </h5> */}
         <div className="p-5 rounded shadow-sm width-100  d-block">
-          <h1 className="display-1 text-dark">Shakir A. Ansari </h1>
-          <hr className="mt-2 mb-4" />
+          <Header header="Shakir A. Ansari" />
+          <hr />
           <p className="fs-5 text-muted">
-            I’m a software engineer based in Rajasthan India with a passion for both
-            frontend and backend.
+            I’m a software engineer based in Rajasthan India with a passion for
+            both frontend and backend.
             <br />I have total of 5+years experience in various
             <a href="#skills" style={{ textDecoration: "none" }}>
               {" "}
