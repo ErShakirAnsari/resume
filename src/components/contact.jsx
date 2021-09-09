@@ -11,7 +11,9 @@ const Contact = () => {
             Feel free to contact me, I look forward to hearing from you!
           </p>
           <p className="fs-5 text-muted">
-            My personal email address is &quot;shakir.ansari@live.com&quot;
+            My personal email address is &quot;
+            <span className="text-primary fw-bold">shakir.ansari@live.com</span>
+            &quot;
           </p>
 
           <div className="social-icons mt-5">
