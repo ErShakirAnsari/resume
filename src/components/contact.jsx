@@ -1,11 +1,10 @@
+import Header from "./common/header";
+
 const Contact = () => {
   return (
     <section className="resume-section p-3 p-lg-5 d-flex d-column" id="contact">
       <div className="my-auto text-dark">
-        <h1 className="display-3 mb-5 text-dark">
-          Contact
-          {/* <span className="small fs-4 text-muted"></span> */}
-        </h1>
+        <Header header="Contact" />
 
         <div className="px-5">
           <p className="fs-5 text-muted">

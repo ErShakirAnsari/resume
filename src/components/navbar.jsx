@@ -1,6 +1,27 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import ProfileLogo from "../images/linked-in-copy.jpg";
+import NavLink from "./common/navLink";
+import config from "../utils/config.json";
+
+const endPoint = config.apiBaseUrl + "/navItems.json";
 
 const Navbar = () => {
+  const [navItems, setNavItems] = useState([]);
+
+  useEffect(() => {
+    async function getData() {
+      const response = await axios.get(endPoint);
+
+      if (response && response.data && response.data.navItems) {
+        setNavItems(response.data.navItems);
+      } else {
+        alert("Something went wrong!");
+      }
+    }
+    getData();
+  }, []);
+
   return (
     <nav
       className="navbar navbar-expand-md navbar-dark bg-v-grad fixed-top"
@@ -31,52 +52,9 @@ const Navbar = () => {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#about">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#experience">
-              Experience
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#education">
-              Education
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#skills">
-              Skills
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#contact">
-              Contact
-            </a>
-          </li>
-          {/* <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#interests">
-              Interests
-            </a>
-          </li> */}
-          {/* <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#awards">
-              Awards
-            </a>
-          </li> */}
-          <li className="nav-item">
-            <a
-              className="nav-link js-scroll-trigger"
-              target="_blank"
-              href="https://github.com/ErShakirAnsari/ErShakirAnsari.github.io/raw/master/cdn/cv/Shakir_A_Resume_v2021-04-05.pdf"
-              rel="noreferrer"
-              //   download
-            >
-              <i className="bi bi-download"></i> resume
-            </a>
-          </li>
+          {navItems.map((item) => (
+            <NavLink key={item.id} navItem={item} />
+          ))}
         </ul>
       </div>
     </nav>

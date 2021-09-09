@@ -1,4 +1,8 @@
 import CalenderSvg from "./common/calender-svg";
+import Date from "./common/date";
+import Paragraph from "./common/paragraph";
+import SubTitle from "./common/subTitle";
+import Title from "./common/title";
 
 const EducationBlock = ({ data }) => {
   return getItem2(data);
@@ -33,24 +37,11 @@ function getItem2(data) {
   return (
     <div className="row mb-4 p-4 shadow-sm rounded">
       <div className="col">
-        <h3 className="mb-1"> {data.course} </h3>
-        <div className="fs-5 text-muted">
-          &mdash; {data.board}
-        </div>
-        <div className="fs-5 text-muted">
-          &mdash; {data.school}, {data.location}
-          {/* <br />
-          {data.course} with percentage of{" "}
-          <i className="text-primary">{data.marks}%</i> */}
-        </div>
+        <Title title={data.course} />
+        <SubTitle subTitle={data.board} />
+        <Paragraph paragraph={`${data.school}, ${data.location}`} />
       </div>
-      <div className="col-md-3">
-        <CalenderSvg width="18" height="18" />
-        &nbsp; &nbsp;
-        <span className="text-primary">
-          {data.startDate} - {data.endDate}
-        </span>
-      </div>
+      <Date startDate={data.startDate} endDate={data.endDate} />
     </div>
   );
 }

@@ -284,3 +284,8 @@ a:active {
 .bg-v-grad {
   background: linear-gradient(to top, #3366cc 0%, #33cccc 100%);
 }
+
+/* .nav-item > .nav-link.active {
+  background-color: #33cccc;
+  background-color: rgba(255, 255, 255, 0.5);
+} */

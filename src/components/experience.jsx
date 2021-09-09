@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import ExperieneBlock from "./experience-block";
 
 import config from "../utils/config.json";
+import Header from "./common/header";
 
 const endPoint = config.apiBaseUrl + "/experience.json?20210908";
 
@@ -30,11 +31,7 @@ const Experience = () => {
       id="experience"
     >
       <div className="my-auto">
-        <h1 className="display-3 mb-5 text-dark">
-          Experience
-          <span className="small fs-4 text-muted"> (5+ years) </span>
-        </h1>
-
+        <Header header="Experience" subHeader="(5+ years)" />
         {data.map((item) => (
           <ExperieneBlock key={item.id} data={item} />
         ))}
