@@ -19,7 +19,7 @@ const ExperieneBlock = ({ data }) => {
         </div>
         <div className="row">
           <div className="col">
-            <Paragraph paragraph={data.about} />
+            <Paragraph> {data.about} </Paragraph>
           </div>
         </div>
       </div>

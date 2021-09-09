@@ -39,7 +39,9 @@ function getItem2(data) {
       <div className="col">
         <Title title={data.course} />
         <SubTitle subTitle={data.board} />
-        <Paragraph paragraph={`${data.school}, ${data.location}`} />
+        <Paragraph>
+          {data.school}, {data.location}
+        </Paragraph>
       </div>
       <Date startDate={data.startDate} endDate={data.endDate} />
     </div>

@@ -1,5 +1,5 @@
-const Paragraph = ({ paragraph }) => {
-  return <p className="fs-6 text-muted"> {paragraph} </p>;
+const Paragraph = (props) => {
+  return <p className="fs-6 text-muted"> {props.children} </p>;
 };
 
 export default Paragraph;
