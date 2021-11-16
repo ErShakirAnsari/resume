@@ -5,7 +5,7 @@ import ExperieneBlock from "./experience-block";
 import config from "../utils/config.json";
 import Header from "./common/header";
 
-const endPoint = config.apiBaseUrl + "/experience.json?20210908";
+const endPoint = config.apiBaseUrl + "/experience.json";
 
 const Experience = () => {
   const [data, setData] = useState([]);
@@ -26,10 +26,7 @@ const Experience = () => {
   console.log(data.length);
 
   return (
-    <section
-      className="resume-section p-3 p-lg-5 d-flex flex-column"
-      id="experience"
-    >
+    <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
       <div className="my-auto">
         <Header header="Experience" subHeader="(5+ years)" />
         {data.map((item) => (

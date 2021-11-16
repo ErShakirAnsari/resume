@@ -1,4 +1,4 @@
-import CalenderSvg from "./common/calender-svg";
+import CalenderSvg from "./common/svg/calender-svg";
 import Date from "./common/date";
 import Paragraph from "./common/paragraph";
 import SubTitle from "./common/subTitle";
@@ -18,8 +18,7 @@ function getItem1(data) {
         <div style={{ fontSize: "1.2em" }}>
           {data.school}
           <br />
-          {data.course} with percentage of{" "}
-          <i className="text-primary">{data.marks}%</i>
+          {data.course} with percentage of <i className="text-primary">{data.marks}%</i>
         </div>
       </div>
       <div className="resume-date text-md-right">

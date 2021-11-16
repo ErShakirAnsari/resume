@@ -1,4 +1,3 @@
-// import calendar from "../images/calendar.svg";
 import React from "react";
 import Title from "../components/common/title";
 import SubTitle from "../components/common/subTitle";
@@ -11,11 +10,12 @@ const ExperieneBlock = ({ data }) => {
     <React.Fragment>
       <div className="mb-4 p-4 shadow-sm rounded">
         <div className="row mb-2">
-          <div className="col">
+          <div className="col-12">
             <Title title={data.position} />
+            <Date startDate={data.startDate} endDate={data.endDate} />
             <SubTitle subTitle={`${data.company}, ${data.location}`} />
           </div>
-          <Date startDate={data.startDate} endDate={data.endDate} />
+          <div className="col-12"></div>
         </div>
         <div className="row">
           <div className="col">
