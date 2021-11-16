@@ -12,8 +12,8 @@ const ExperieneBlock = ({ data }) => {
         <div className="row mb-2">
           <div className="col-12">
             <Title title={data.position} />
+            <SubTitle subTitle={`${data.company} (${data.location})`} />
             <Date startDate={data.startDate} endDate={data.endDate} />
-            <SubTitle subTitle={`${data.company}, ${data.location}`} />
           </div>
           <div className="col-12"></div>
         </div>
