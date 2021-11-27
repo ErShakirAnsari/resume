@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.f4a0238a.chunk.css",
-    "main.js": "/resume/static/js/main.041dfec2.chunk.js",
-    "main.js.map": "/resume/static/js/main.041dfec2.chunk.js.map",
-    "runtime-main.js": "/resume/static/js/runtime-main.db3eb256.js",
-    "runtime-main.js.map": "/resume/static/js/runtime-main.db3eb256.js.map",
+    "main.css": "/resume/static/css/main.869f0909.chunk.css",
+    "main.js": "/resume/static/js/main.12f1ef5c.chunk.js",
+    "main.js.map": "/resume/static/js/main.12f1ef5c.chunk.js.map",
+    "runtime-main.js": "/resume/static/js/runtime-main.d05bdfdf.js",
+    "runtime-main.js.map": "/resume/static/js/runtime-main.d05bdfdf.js.map",
     "static/css/2.139d2174.chunk.css": "/resume/static/css/2.139d2174.chunk.css",
-    "static/js/2.71a2ba4b.chunk.js": "/resume/static/js/2.71a2ba4b.chunk.js",
-    "static/js/2.71a2ba4b.chunk.js.map": "/resume/static/js/2.71a2ba4b.chunk.js.map",
-    "static/js/3.9d6ecc6a.chunk.js": "/resume/static/js/3.9d6ecc6a.chunk.js",
-    "static/js/3.9d6ecc6a.chunk.js.map": "/resume/static/js/3.9d6ecc6a.chunk.js.map",
+    "static/js/2.16a7342a.chunk.js": "/resume/static/js/2.16a7342a.chunk.js",
+    "static/js/2.16a7342a.chunk.js.map": "/resume/static/js/2.16a7342a.chunk.js.map",
+    "static/js/3.2010ae7e.chunk.js": "/resume/static/js/3.2010ae7e.chunk.js",
+    "static/js/3.2010ae7e.chunk.js.map": "/resume/static/js/3.2010ae7e.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.139d2174.chunk.css.map": "/resume/static/css/2.139d2174.chunk.css.map",
-    "static/css/main.f4a0238a.chunk.css.map": "/resume/static/css/main.f4a0238a.chunk.css.map",
-    "static/js/2.71a2ba4b.chunk.js.LICENSE.txt": "/resume/static/js/2.71a2ba4b.chunk.js.LICENSE.txt",
+    "static/css/main.869f0909.chunk.css.map": "/resume/static/css/main.869f0909.chunk.css.map",
+    "static/js/2.16a7342a.chunk.js.LICENSE.txt": "/resume/static/js/2.16a7342a.chunk.js.LICENSE.txt",
     "static/media/bootstrap-icons.css": "/resume/static/media/bootstrap-icons.dfd0ea12.woff2",
     "static/media/linked-in-copy.3de2fd22.jpg": "/resume/static/media/linked-in-copy.3de2fd22.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.db3eb256.js",
+    "static/js/runtime-main.d05bdfdf.js",
     "static/css/2.139d2174.chunk.css",
-    "static/js/2.71a2ba4b.chunk.js",
-    "static/css/main.f4a0238a.chunk.css",
-    "static/js/main.041dfec2.chunk.js"
+    "static/js/2.16a7342a.chunk.js",
+    "static/css/main.869f0909.chunk.css",
+    "static/js/main.12f1ef5c.chunk.js"
   ]
 }
