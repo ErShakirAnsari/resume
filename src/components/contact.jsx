@@ -1,15 +1,12 @@
 import Header from "./common/header";
+import Section from "./common/section";
 
 const Contact = () => {
   return (
-    <section className="resume-section p-3 p-lg-5 d-flex d-column" id="contact">
-      <div className="my-auto text-dark">
-        <Header header="Contact" />
-
-        <div className="px-5">
-          <p className="fs-5 text-muted">
-            Feel free to contact me, I look forward to hearing from you!
-          </p>
+    <>
+      <Section id="contact" title="Contact">
+        <div className="row mb-5 p-5 shadow rounded border">
+          <p className="fs-5 text-muted">Feel free to contact me, I look forward to hearing from you!</p>
           <p className="fs-5 text-muted">
             My personal email address is &quot;
             <span className="text-primary fw-bold">shakir.ansari@live.com</span>
@@ -17,26 +14,16 @@ const Contact = () => {
           </p>
 
           <div className="social-icons mt-5">
-            <a
-              href="https://www.linkedin.com/in/ershakiransari/"
-              target="_blank"
-              rel="noreferrer"
-              title="linkedin"
-            >
+            <a href="https://www.linkedin.com/in/ershakiransari/" target="_blank" rel="noreferrer" title="linkedin">
               <i className="bi bi-linkedin"></i>
             </a>
-            <a
-              href="https://github.com/ErShakirAnsari"
-              target="_blank"
-              rel="noreferrer"
-              title="github"
-            >
+            <a href="https://github.com/ErShakirAnsari" target="_blank" rel="noreferrer" title="github">
               <i className="bi bi-github"></i>
             </a>
           </div>
         </div>
-      </div>
-    </section>
+      </Section>
+    </>
   );
 };
 

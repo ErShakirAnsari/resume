@@ -2,9 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import EducationBlock from "./education-block";
 import config from "../utils/config.json";
+import Section from "./common/section";
 
-const endPoint = config.apiBaseUrl+"/educations.json?20210908";
-
+const endPoint = config.apiBaseUrl + "/educations.json?20210908";
 
 const Education = () => {
   const dataList = [
@@ -42,34 +42,26 @@ const Education = () => {
 
   const [educations, setEducations] = useState([]);
 
-  useEffect(()=> {
-    async function getData(){
+  useEffect(() => {
+    async function getData() {
       const response = await axios.get(endPoint);
       if (response && response.data && response.data.educations) {
-          setEducations(response.data.educations);
+        setEducations(response.data.educations);
       } else {
         alert("somthing went wrong");
       }
     }
     getData();
-  },[]);
+  }, []);
 
   return (
-    <section
-      className="resume-section p-3 p-lg-5 d-flex flex-column"
-      id="education"
-    >
-      <div className="my-auto">
-        <h1 className="display-3 mb-5 text-dark">
-          Education
-          {/* <span className="small fs-4 text-muted"> (B.Tech in CS) </span> */}
-        </h1>
-
+    <>
+      <Section id="education" title="Education" subTitle="(B.Tech in Computer Science &amp; Engineering)">
         {educations.map((data) => (
           <EducationBlock key={data.id} data={data} />
         ))}
-      </div>
-    </section>
+      </Section>
+    </>
   );
 };
 

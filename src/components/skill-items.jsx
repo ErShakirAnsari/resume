@@ -12,11 +12,8 @@ function getItem_v1(data) {
 }
 function getItem_v2(data) {
   return (
-    <button
-      type="button"
-      className="btn btn-light bg-gradient border shadow-sm m-1"
-    >
-      {data.name} <span className="badge bg-primary"> {data.skill} </span>
+    <button type="button" className="btn btn-light bg-gradient border shadow-sm m-1">
+      {data.name} <span className="badge bg-primary ms-5"> {data.skill} </span>
     </button>
   );
 }
@@ -24,10 +21,7 @@ function getItem_v2(data) {
 function getItem_v3(data) {
   return (
     <div className="row mb-2">
-      <div className="col-xl-2 col-md-3 col-sm-6 text-end fw-bold fs-6">
-        {" "}
-        {data.name}{" "}
-      </div>
+      <div className="col-xl-2 col-md-3 col-sm-6 text-end fw-bold fs-6"> {data.name} </div>
       <div className="col-xl col-md-9 col-sm-6">
         <div className="progress">
           <div

@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import ExperieneBlock from "./experience-block";
+import ExperieneRow from "./experience-row";
 
 import config from "../utils/config.json";
-import Header from "./common/header";
+import Section from "./common/section";
 
 const endPoint = config.apiBaseUrl + "/experience.json";
 
@@ -22,18 +22,14 @@ const Experience = () => {
     }
     getData();
   }, []);
-
-  console.log(data.length);
+  console.log("experience", data);
 
   return (
-    <section className="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-      <div className="my-auto">
-        <Header header="Experience" subHeader="(5+ years)" />
-        {data.map((item) => (
-          <ExperieneBlock key={item.id} data={item} />
-        ))}
-      </div>
-    </section>
+    <Section id="experience" title="Experience" subTitle="(5+ years)">
+      {data.map((item, index) => (
+        <ExperieneRow key={index} data={item} />
+      ))}
+    </Section>
   );
 };
 

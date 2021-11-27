@@ -7,7 +7,7 @@ const SubTitle = ({ subTitle, mDash }) => {
   return (
     <span className="fs-5 text-muted">
       {/* <OfficeSvg /> */}
-      <span className="align-text-top">
+      <span className="align-text-top fw-bold">
         {mDash && mdashHtml} {subTitle}
       </span>
     </span>
