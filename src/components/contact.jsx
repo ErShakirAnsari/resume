@@ -6,11 +6,9 @@ const Contact = () => {
     <>
       <Section id="contact" title="Contact">
         <div className="row mb-5 p-5 shadow rounded border">
-          <p className="fs-5 text-muted">Feel free to contact me, I look forward to hearing from you!</p>
-          <p className="fs-5 text-muted">
-            My personal email address is &quot;
-            <span className="text-primary fw-bold">shakir.ansari@live.com</span>
-            &quot;
+          <p className="lead">Feel free to contact me, I look forward to hearing from you!</p>
+          <p className="lead">
+            My personal email address is <mark>shakir.ansari@live.com</mark>
           </p>
 
           <div className="social-icons mt-5">

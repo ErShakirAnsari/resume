@@ -2,7 +2,7 @@ const NavLink = ({ navItem }) => {
   return (
     <li className="nav-item">
       <a
-        className="nav-link js-scroll-trigger"
+        className="nav-link js-scroll-trigger fw-normal text-white"
         href={navItem.href}
         target={navItem.isExternal && "_blank"}
         rel={navItem.isExternal && "noreferrer"}

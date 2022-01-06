@@ -1,11 +1,10 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap");
 
 /* 
+@import url(https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;700&display=swap);
 @import url("https://fonts.googleapis.com/css?family=Merienda:400,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-*/
-
-/*
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
 @import url('https://fonts.googleapis.com/css?family=Baloo+Thambi&subset=latin-ext');
@@ -15,8 +14,8 @@
 */
 
 * {
-  font-family: "Overlock", "Open Sans", "Segoe UI", "Roboto", "Helvetica Neue",
-    "Arial", "sans-serif", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Overlock", "Open Sans", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 body {
@@ -67,9 +66,8 @@ h2 {
 } */
 .paragraph {
   font-weight: 400;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.1rem;
   color: black;
 }
