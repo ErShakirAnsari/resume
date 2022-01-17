@@ -1,6 +1,6 @@
 ### Step 1: Add GitHub Pages dependency package
 ```
-npm install gh-pages -- save-dev
+npm install gh-pages --save-dev
 ```
 
 ### Step 2: Add homepage property to package.json file
