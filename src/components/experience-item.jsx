@@ -1,32 +1,48 @@
+import moment from "moment";
 import React from "react";
-import Title from "./common/title";
-import SubTitle from "./common/subTitle";
+import { getExperience } from "../utils/utils";
 import Date from "./common/date";
 import Paragraph from "./common/paragraph";
 
-const ExperieneItem = ({ data, dataIndex, dataLength }) => {
-  console.log(`dataIndex: ${dataIndex}, dataLength: ${dataLength}`);
-
-  const css = dataIndex + 1 < dataLength ? "row mb-5" : "row";
+const ExperieneItem = ({ position }) => {
+  const displayDateFormate = "MMM, YYYY";
+  let dateStart = new window.Date(position?.startDate);
+  let dateEnd = position?.endDate ? new window.Date(position?.endDate) : null;
 
   return (
-    <React.Fragment>
-      <div className="row mb-2">
-        <div className="col-12">
-          <Title title={data.position} />
-          <SubTitle subTitle={`${data.company} (${data.location})`} />
-          <Date startDate={data.startDate} endDate={data.endDate} />
-        </div>
-        <div className="col-12"></div>
+    <div className="d-flex flex-column ps-3 mt-4 position">
+      <div className="fs-3">
+        <span>{position?.title}</span>
       </div>
-      <div className={css}>
-        <div className="col">
-          {data.about.map((aboutItem) => (
+
+      <div className="d-flex">
+        <div className="align-self-center me-3 fs-5">
+          <i class="bi bi-calendar3"></i>
+        </div>
+
+        <div className="flex-fill">
+          <div className="d-flex flex-column">
+            <div>
+              <span className="fs-5">{getExperience(dateStart, dateEnd)}</span>
+            </div>
+            <div>
+              <span>{moment(dateStart).format(displayDateFormate)}</span>
+              <span>&nbsp;&mdash;&nbsp;</span>
+              <span>{dateEnd ? moment(dateEnd).format(displayDateFormate) : "working"}</span>
+              {/* <Date dateStart={dateStart} dateEnd={dateEnd} /> */}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="mt-3">
+          {position?.about.map((aboutItem) => (
             <Paragraph> {aboutItem} </Paragraph>
           ))}
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

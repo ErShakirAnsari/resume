@@ -5,7 +5,8 @@ import ExperieneRow from "./experience-row";
 import config from "../utils/config.json";
 import Section from "./common/section";
 
-const endPoint = config.apiBaseUrl + "/experience.json";
+// const endPoint = config.apiBaseUrl + "/experience.json";
+const endPoint = config.api.baseUrl + "/experience.json?v=" + config.api.version;
 
 const Experience = () => {
   const [data, setData] = useState([]);
@@ -25,7 +26,7 @@ const Experience = () => {
   console.log("experience", data);
 
   return (
-    <Section id="experience" title="Experience" subTitle="(5+ years)">
+    <Section id="experience" title="Experience" subTitle="Total experience = 6+ years">
       {data.map((item, index) => (
         <ExperieneRow key={index} data={item} />
       ))}
